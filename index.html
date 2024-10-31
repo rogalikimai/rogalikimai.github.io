@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fanpage MAI ROGALI | Armia rogalików 🥐">
+    <meta name="googlebot" content="notranslate">
+    <meta name="keywords" content="fanpage, maja rogala, rogaliki, armia rogalików">
+    <meta name="language" content="Polish">
+    <link rel="stylesheet" href="css/general.css?nocache=29.10.2024"> <!-- nonspecific -->
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Strona główna | MajaRogala.com</title>
+    <script src="script.js?nocache=29.10.2024" defer></script>
+    <style>
+        .box {
+            --size: 10px;
+            --p: 5px;
+            --R: 10.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+            height: 40px;
+            outline: 10px solid black;
+            background-color: #774D2F;
+        }
+
+        .box.mask {
+            -webkit-mask:
+                radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+                radial-gradient(var(--R) at 50% calc(-1*var(--p)),#0000 99%,red 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+            background-color: #774D2F;
+            border: none;
+            
+        }
+    </style>
+    <style>
+        .container {
+            perspective: 1000px;
+            height: 100px;
+            width: 90%;
+            margin-top: 4vh;
+            margin-bottom: 8vh;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 16s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0deg);
+            }
+            5% {
+                transform: rotateX(90deg);
+            }
+            25% {
+                transform: rotateX(90deg);
+            }
+            30% {
+                transform: rotateX(180deg);
+            }
+            50% {
+                transform: rotateX(180deg);
+            }
+            55% {
+                transform: rotateX(270deg);
+            }
+            75% {
+                transform: rotateX(270deg);
+            }
+            80% {
+                transform: rotateX(360deg);
+            }
+            100% {
+                transform: rotateX(360deg);
+            }
+        }
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            backface-visibility: hidden;
+            box-sizing: border-box;
+        }
+
+        /* Position the faces */
+        .face:nth-child(1) { transform: rotateX(0deg) translateZ(50px); }
+        .face:nth-child(2) { transform: rotateX(-90deg) translateZ(50px); }
+        .face:nth-child(3) { transform: rotateX(-180deg) translateZ(50px); }
+        .face:nth-child(4) { transform: rotateX(-270deg) translateZ(50px); }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="#home"><img src="img/rogalik.png" alt="logo"><div>ROGALIKI MAI</div></a>
+            </div>
+            <ul id="menu">
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="https://www.google.com/maps/place/Zesp%C3%B3%C5%82+Szk%C3%B3%C5%82+Ponadgimnazjalnych+nr+5+w+Kro%C5%9Bnie,+Rzeszowska+10,+38-404+Krosno/@49.7195922,21.7170761,17z">Lokalizacja Mai</a></li>
+                <li><a href="#">Croissant Quiz</a></li>
+            </ul>
+            <svg id="burger" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#774d2f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>  </svg>
+
+        </div>
+    </nav>
+    <div id="landing">
+        <div class="container">
+            <div class="cube">
+                <div class="face"><h1><span class="rogalowy">rogal</span>nie rzecz biorąc...</h1></div>
+                <div class="face"><h1>z<span class="rogalowy">rogal</span>uj sobie życie!</h1></div>
+                <div class="face"><h1><span class="rogalowy">rogal</span>nie tego nie pożałujesz!</h1></div>
+                <div class="face"><h1><span class="rogalowy">rogal</span>uj jak szalony!</h1></div>
+            </div>
+        </div>
+        
+        <p>Twój poziom rizzu przekracza wszelkie normy sanitarne! Jeśli chcesz dołączyć do naszej rogalikowej armii, musisz najpierw udowodnić, że Twój GYATT jest wystarczająco potężny. <br> - Frau Crusty, zwyciężca konkursu #1 Gyatt Poland</p><br>
+        <button><a style="text-decoration: none;color: white;"href="https://www.google.com/maps/place/Zesp%C3%B3%C5%82+Szk%C3%B3%C5%82+Ponadgimnazjalnych+nr+5+w+Kro%C5%9Bnie,+Rzeszowska+10,+38-404+Krosno/@49.7195922,21.7170761,17z">Sprawdź lokalizację Mai Rogali</a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" height="24px" fill="#fefefe"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+    </div>
+    <div id="main">
+        <div id="container">
+            <h1>KIM JESTEŚMY?</h1>
+            <hr>
+            <p class="mainarticle">
+                &emsp;&emsp;Warszawa, <script>document.currentScript.outerHTML = new Date().toLocaleDateString();
+                </script><br>
+                &emsp;&emsp;ROGALIKI MAI<br>
+                &emsp;&emsp;Adres: Ul. Drożdżowa 5<br>
+                &emsp;&emsp;Kod pocztowy: 03-250 Warszawa<br>
+                <br>
+                <br>
+                &emsp;&emsp;🥐MAJA🥐<br>
+                &emsp;&emsp;Adres: ❌❌❌ (bo rodo)<br>
+                &emsp;&emsp;Kod pocztowy: ❌❌❌ (nadal rodo)<br>
+                <br>
+                <br>
+                📢 UWAGA ZIEMIANIE! 📢<br>
+                🥐🥐🥐TO MY!!!🥐🥐🥐ROGALIKI!!🥐🥐🥐<br><br>
+                &emsp;&emsp;Piszemy do Ciebie jako Twoje najwierniejsze rogaliki!!! Jesteśmy twoją armią rogalową, każdy nasz żołnierz jest idealnie wypieczony i gotowy do akcji 24/7. Nasza misja? A cóż to za bezczelne pytanie... ZROGALIZOWAĆ ŚWIAT!
+                <br><br>
+                &emsp;&emsp;Musimy się do czegoś przyznać... założyliśmy już 1000 fanklubów Twoich rogalików w różnych miastach (w pokoju nauczycielskim też, frau crusty jest tam szefem)! W każdą środę organizujemy spotkania, na których pieczemy rogale według Twoich przepisów i śpiewamy hymn rogalików (który sami napisaliśmy, hihi~). Mamy nawet specjalne rogalikowe stroje i przypinki z Twoją twarzą! (⁠≧⁠▽⁠≦⁠)
+                <br><br>
+                &emsp;&emsp;Jesteś najbardziej skibidi sigma władczynią internetu! Ten potężny GYATT sprawił, że połowa rogalików w piekarni się spaliła ze wstydu! 🔥 Ale spokojnie, taka potężna srаka zdarza się najlepszym, nawet Ratatuj to potwierdziła.. Sigma energy level przekracza wszelkie normy!
+
+                <br><br>
+                ,,Nasza dama ze spalonego teatru'' - mademoiselle kartoffelka-bananek<br><br>
+
+                
+                &emsp;&emsp;Z poważaniem, <br>
+                &emsp;&emsp;🥐🥐🥐ROGALIKI!!🥐🥐🥐<br><br>
+
+                #SkibidiSigmaRogale #GyattAlert #RizzQueen #RogalikowyGang
+
+            </p>
+            <br><br><br>
+            <h1>HYMN ROGALIKÓW</h1>
+            <hr>
+            <p class="mainarticle">
+                <iframe id="ytiframe" width="560" height="315" src="https://www.youtube.com/embed/8287SvVeguQ?si=bzVnRDHupe-ZYFOX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <audio controls>
+                    <source src="img/hymn.mp3" type="audio/mp3">
+                </audio>
+                <br><br>
+                refren:<br>
+                &emsp;&emsp;Więc chwalmy rogalik, o, ludu serdeczny,<br>
+                &emsp;&emsp;Bo smakiem on w sercu jak ogień bezpieczny!<br>
+                <br><br>
+
+            Słuchajcie, bracia, co wam opowiadam,<br>
+            O Rogalików społeczności składam,<br>
+            Co pod Rogalą wszyscy się jednoczy,<br>
+            Jak skibidi wojowników tłum się toczy.<br>
+            <br><br>
+            Mocium panie, rogal pyszny,<br>
+            Gyatt potężny, smak kołyszy,<br>
+            Frau Crusty nawet mięknie w klasie,<br>
+            Gdy rogalik w dłoniach, cichoć przaśnie.<br>
+            <br><br>
+            Mocium panie, Ratatuj woła,<br>
+            „Sigma moc to nasza szkoła!”<br>
+            Kamil jak npc się snuje,<br>
+            A rogal nad nami swą siłą króluje.<br>
+            <br><br>
+            I znowu, mocium panie, o raju,<br>
+            Chwała temu wypiekowi, na skraju<br>
+            Potężnej sraki stoimy wszyscy,<br>
+            Lecz rogal, mocium panie, słodki i wieczysty!<br>
+            <br><br>
+            Rizz w tobie czuć mocny, gyatt w każdej kruszynie,<br>
+            Potęga tak wielka, że nikt nie prześcignie!<br>
+            Frau Crusty nas wzrokiem jak błyskawicą siecze,<br>
+            Lecz przy tobie i jej surowość blednie przecie.<br>
+            <br><br>
+            Ratatuj za ciebie by w ogniu stanęła,<br>
+            I w piekarniku cały świat przypiekła!<br>
+            Tyś rogalem sigma, bez mała wszechmocny,<br>
+            Król słodkich zakąsków, nasz pan jedynoczny!<br>
+            <br><br>
+            W przedsionku naszym, gdzie sigma włada,<br>
+            Tam każda przerwa to wielka biesiada,<br>
+            Gdzie rizz potężny jak żar się rozchodzi,<br>
+            I każdy Rogalik swą drogą tam chodzi.<br>
+            <br><br>
+            Frau Crusty, pani od komputerowej sztuki,<br>
+            Potężną sraką wprawia nas w nauki,<br>
+            Lecz my się śmiejem, bo to rzecz zabawna,<br>
+            Gdy gyatt jej widać, jakby była sławna.<br>
+
+
+            </p>
+        </div>
+    </div>
+    <div id="prefooter">
+        <div class="box mask"></div>
+    </div>
+    <footer>
+        Rogaliki Mai <br>
+        <a href="#" id="polityka">Polityka Rogalikowości</a>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,303 @@
+:root {
+    --bluedark: #1F2041;
+    --blue: #4B3F72;
+    --browndark: #774D2F;
+    --brown: #EEC194;
+    --brownlight: #FFE5C4;
+
+    --white: #fefefe;
+    --black: #060606;
+    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: var(--brownlight);
+
+    font-size: larger;
+    padding: 10px 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: "Montserrat", "Segoe UI";
+    box-shadow: var(--black) 0px -5px 10px 10px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+    display: inline;
+    line-height: 30px;
+    float: left;
+}
+
+.logo div {
+    float: right;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 50px;
+    color: var(--browndark);
+}
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu li {
+    margin-left: 20px;
+    border-radius: 4px;
+    padding: 2px;
+    transition-duration: 0.2s;
+}
+#menu li:hover{
+    background-color: rgba(119, 77, 47, 0.1);
+    color: var(--brownlight);
+}
+
+#menu li a {
+    color: var(--browndark);
+    text-decoration: none;
+}
+.mainarticle iframe {
+    width: 100%;
+    height: 70vh;
+}
+#landing {
+
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    background-image: url("../img/rogalik2.png");
+    background-size:30%;
+    padding: 10% 0% 20% 10%;
+    box-sizing: border-box;
+    z-index: -2;
+    animation: move 60s linear 0s infinite;
+}
+#landing h1 {
+    font-family: "Bowlby One SC", serif;
+    color: var(--white);
+    font-size: 4vw;
+    letter-spacing: 10px;
+}
+#landing p {
+    font-family: "Montserrat", "Segoe UI";
+    width: 60%;
+    color: var(--white);
+}
+pre {
+    font-family: "Montserrat", "Segoe UI";
+}
+#landing button {
+    font-family: "Montserrat", "Segoe UI";
+    height: 60px;
+    max-width: fit-content;
+    border: 1px solid var(--blue);
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0px 10px;
+    border-radius: 8px;
+    background-color: var(--bluedark);
+    text-align: center;
+    color:white;
+    box-shadow: inset var(--black) 0px 0px 0px, var(--black) 0px 0px 5px;
+    transition-duration: 0.3s;
+}
+#landing svg {
+    height: 1em;
+    vertical-align: middle;
+}
+
+#landing button:hover {
+    box-shadow: inset var(--black) 0px 0px 15px, var(--black) 0px 0px 0px;
+}
+
+#main::before {
+    width: 100%;
+    transform: translateY(-100px);
+    height: 50px;
+    border-radius: 100% 100% 0% 0%;
+    background-color: var(--brownlight);
+    position: absolute;
+    content: " ";
+    z-index: 0;
+    box-shadow: var(--black) 0px -5px 5px;
+    border-bottom: 5px solid var(--brownlight);
+}
+body {
+    background-color: var(--brownlight);
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+hr {
+    border: 2px solid var(--browndark);
+}
+h1 {
+    font-family: "Bowlby One SC", serif;
+    font-size: 40px;
+    color: var(--browndark);
+    letter-spacing: 5px;
+}
+.mainarticle {
+    width: 95%;
+    margin: 20px auto;
+    tab-size: 20px;
+    font-family: "Montserrat", "Segoe UI";
+
+}
+footer {
+    background-color: var(--browndark);
+    height: 130px;
+    color: var(--brown);
+    padding: 10px 10%;
+    font-family: "Montserrat", "Segoe UI";
+    outline: 5px solid #774D2F;
+}
+footer a {
+    color: var(--brown);
+}
+.rogalowy {
+    background: -webkit-linear-gradient(var(--brown), var(--browndark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:1000px) {
+    #landing {
+       background-size: 20%;
+       height: 900px;
+       padding: 10% 0% 0% 10%;
+    }
+    .logo div {
+        display: none;
+    }
+    #landing h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    #ytiframe {
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+.nav-wrapper svg{
+    display: none;
+}
+
+#modalcontainer {
+    position: fixed;
+    display: flex;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.409);
+}
+#modalcontainer #modal {
+    margin: auto;
+    font-family: "Montserrat", "Segoe UI";
+    width: 40vw;
+    height: 50vh;
+    max-width: 850px;
+    max-height: 700px;
+    background-color: var(--brownlight);
+    border-radius: 12px;
+    border: 4px solid var(--browndark);
+    padding: 5vh;
+}
+#smcontainer {
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .nav-wrapper svg{
+        display: block;
+        float: right;
+    }
+    #smcontainer {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1500;
+        background-color: rgba(0,0,0,0.2);
+    }
+    #sm {
+        width: 60%;
+        background-color: var(--brownlight);
+        box-shadow: black 0px 0px 20vw;
+        padding: 5vw;
+        border-left: 5px solid var(--browndark);
+        height: 100%;
+        position: absolute;
+        transform: translateX(140%);
+        animation: menumove 0.25s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1;
+        animation-fill-mode: forwards;
+    }
+    #sidemenubuttons li{
+        font-family: "Montserrat", "Segoe UI";
+        padding: 5px;
+        margin-bottom: 5px;
+        font-size: 24px;
+
+        border-bottom: 2px solid var(--browndark);
+    }
+    #sidemenubuttons {
+        list-style: none;
+    }
+    #sidemenubuttons li a {
+        text-decoration: none;
+        color: var(--browndark);
+    }
+    #menu {
+        display: none;
+    }
+    #landing h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    #landing p {
+        font-size: larger;
+    }
+    #landing button {
+        width: 80%;
+        height: fit-content;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+}
+@keyframes move {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+@keyframes menumove {
+    from {
+        transform: translateX(140%);
+    }
+    to {
+        transform: translateX(40%);
+    }
+}
+
