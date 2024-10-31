@@ -1,7 +1,7 @@
 function showModal(title,text) {
     let element=
      `<div id="modalcontainer">
-        <div id="modal">
+        <div id="modal" style="overflow-y:scroll;overflow-x:hidden;">
             <h2 style="float: left; width: 60%;">${title}</h2>
             <svg onclick='document.querySelector("#modalcontainer").remove()' style="float: right; margin:5px; cursor:pointer" xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             <hr style="clear: both;">
